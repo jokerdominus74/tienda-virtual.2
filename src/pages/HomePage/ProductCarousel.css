@@ -1,0 +1,114 @@
+/* Asegúrate de que el contenedor principal ocupe todo el ancho disponible */
+.owl-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1000px; /* Limita el ancho máximo del carrusel */
+}
+
+/* Estilo para cada item del carrusel */
+.service-item {
+    position: relative;
+    text-align: center;
+    margin: 10px;
+    max-width: 250px; /* Ajusta el tamaño máximo de los ítems */
+}
+
+/* Estilo para las imágenes dentro de los ítems */
+.service-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para los botones dentro de los ítems */
+.service-item a {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+    font-size: 14px; /* Tamaño de la fuente más pequeño */
+}
+
+/* Efecto hover en los botones */
+.service-item a:hover {
+    opacity: 1;
+}
+
+/* Añade márgenes y flexibilidad para el contenedor de la tarjeta */
+.card-body {
+    margin-bottom: 20px;
+}
+
+/* Estilo para centrar los botones en el contenedor de acciones */
+.card-actions {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilo para los botones */
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+/* Ajustes para las imágenes en el carrusel */
+.owl-carousel .owl-item {
+    display: flex;
+    justify-content: center;
+}
+
+/* Ajuste del tamaño máximo de los ítems del carrusel */
+.owl-carousel .service-item {
+    max-width: 250px;
+    min-height: 250px;
+}
+
+/* Estilo para los botones de navegación del carrusel */
+.owl-nav button.owl-prev, .owl-nav button.owl-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Estilo para el botón de navegación anterior */
+.owl-nav button.owl-prev {
+    left: -30px;
+}
+
+/* Estilo para el botón de navegación siguiente */
+.owl-nav button.owl-next {
+    right: -30px;
+}
+
+/* Efecto hover para los botones de navegación */
+.owl-nav button.owl-prev:hover, .owl-nav button.owl-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Adaptación para dispositivos móviles */
+@media (max-width: 768px) {
+    .service-item {
+      margin: 5px;
+    }
+
+    .owl-nav button.owl-prev, .owl-nav button.owl-next {
+      font-size: 16px;
+      padding: 8px;
+    }git comm
